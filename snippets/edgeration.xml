@@ -30,6 +30,7 @@
 
   <!-- Packages -->
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edgeration" />
+  <project path="packages/apps/Updates" name="packages_apps_Updates" remote="edgeration" />
 
   <!-- System -->
   <project path="vendor/edgeration" name="vendor_edgeration" remote="edgeration" />
