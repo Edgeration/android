@@ -22,6 +22,9 @@
 
   <project path="android" name="android" remote="edgeration" />
 
+  <!-- SEPolicy -->
+  <project path="device/lineage/sepolicy" remote="edgeration" name="device_lineage_sepolicy" />
+
   <!-- Frameworks -->
   <project path="frameworks/base" name="frameworks_base" remote="edgeration" />
 
