@@ -36,5 +36,6 @@
   <!-- System -->
   <project path="vendor/edgeration" name="vendor_edgeration" remote="edgeration" />
   <project path="lineage-sdk" name="lineage-sdk" remote="edgeration" />
+  <project path="system/core" name="system_core" remote="edgeration" />
 
 </manifest>
