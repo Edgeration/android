@@ -32,6 +32,7 @@
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edgeration" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="edgeration" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="edgeration" />
+  <project path="packages/apps/EdgerationSDK" name="packages_apps_Edgeration" remote="edgeration" revision="master"/>
 
   <!-- System -->
   <project path="vendor/edgeration" name="vendor_edgeration" remote="edgeration" />
