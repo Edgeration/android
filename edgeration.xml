@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <project path="manifest" name="android" remote="edgeration" />
+  <project path="build/make" name="build" remote="edgeration" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="edgeration" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- hardware repos -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="edgeration" />
+
+  <!-- tools repos -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="edgeration" />
+
+  <!-- vendor repos -->
+  <project path="vendor/edgeration" name="vendor_edgeration" remote="edgeration" />
+
+</manifest>
