@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="edgeration"
+           fetch="https://github.com/edgeration"
+           revision="refs/heads/edger-0.2" />
+
+  <!-- AOSP Projects -->
+  <project path="build/make" name="build" groups="pdk" remote="edgeration" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" groups="pdk,tradefed" remote="edgeration" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <project path="android" name="android" remote="edgeration" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="frameworks_base" remote="edgeration" />
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="edgeration" />
+
+  <!-- System -->
+  <project path="vendor/edgeration" name="vendor_edgeration" remote="edgeration" />
+
+</manifest>
